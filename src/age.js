@@ -1,8 +1,8 @@
-// export function AgeCalculator(age) {
-//   constructor(years) {
-//     this.years = years;
-//   }
-//   calculateAge() {
-//
-//   }
-// }
+export class Age {
+  constructor(years) {
+    this.years = years;
+  }
+  calculateAge() {
+
+  }
+}

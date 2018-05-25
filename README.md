@@ -28,15 +28,15 @@ _None, currently._
 _Send questions to Andrew at mailto:aflupton@gmail.com_
 
 ## Technologies Used
- _Javascript_
- _Node_
- _Karma_
- _Jasmine_
- _Babel_
- _jQuery-3.3.1_
- _HTML5_
- _CSS3_
- _Bootstrap-4.1.1_
+ *_Javascript_
+ *_Node_
+ *_Karma_
+ *_Jasmine_
+ *_Babel_
+ *_jQuery-3.3.1_
+ *_HTML5_
+ *_CSS3_
+ *_Bootstrap-4.1.1_
 
 ### License
 * Published under the MIT License.
