@@ -1,12 +1,12 @@
 {
-  "name": "AgeCalculator",
+  "name": "Age-Calculator",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "nyc karma start karma.conf.js",
     "build": "webpack --mode development",
     "start": "npm run build; webpack-dev-server --open --mode development",
+    "test": "nyc karma start karma.conf.js",
     "watch": "webpack --watch",
     "lint": "eslint src/*.js"
   },
