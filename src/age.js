@@ -13,29 +13,28 @@ export class Age {
   }
   //calculates age on Earth, using JS Date() method
   calculateAge() {
-    if(this.year == null && this.month != null && this.day != null) {
+    if(this.year != null && this.month != null && this.day != null) {
       let birthDate = new Date(this.year, this.month, this.day);
       let currentDate = new Date();
       let ageDiff = currentDate.getTime()-birthDate.getTime();//age diff in milliseconds
       let ageYears = ageDiff/31557600000;//divide by number of milliseconds in a year
-      console.log("age: " + ageYears);//attempt to log age in years
-      return ageYears;//return age in earth years to rest of app
+      return parseFloat(ageYears.toFixed(0));//return age in earth years to rest of app
     }
     console.log("3nd Conditional not reached.");//log conditional
   }
-  Calculates the difference in seconds between two dates
+  //Calculates the difference in seconds between two dates
   calculateAgeDiff() {
     if(this.year != null) {
-      let ageSeconds = this.calculateAge()*31557600000;//define a new variable equal to seconds lived
-      let otherDate = new Date();//define another variable equal to milliseconds since another date
-      let temp = (otherDate.getTime()/1000)-ageSeconds;//define a third variable equal to the difference in seconds between those dates
-      return "pass" + temp;//return 'pass' and number ofseconds between two dates
+      let ageSeconds = this.calculateAge()*31557600;//define a new variable equal to seconds lived
+      let otherDate = new Date(this.year, this.month, this.day);//define another variable equal to milliseconds since another date
+      let temp = ageSeconds-(otherDate.getTime()/1000);//define a third variable equal to the difference in seconds between those dates
+      return parseFloat(temp.toFixed(0));//return 'pass' and number ofseconds between two dates
     }
     console.log("Conditional not reached.");//log conditional
   }
   //calculates age on Mercury based on calculateAge()
   calculateAgeOnMercury() {
-    if(this.year == null && this.month != null && this.day != null) {
+    if(this.year != null && this.month != null && this.day != null) {
 
       return this.calculateAge()/0.24;//return age on Mercury by mulitplying Earth age by 0.24
     }
@@ -43,35 +42,87 @@ export class Age {
   }
   //alculates age on Venus based on calculateAge()
   calculateAgeOnVenus() {
-    if(this.year == null && this.month != null && this.day != null) {
+    if(this.year != null && this.month != null && this.day != null) {
       return this.calculateAge()/0.62;//return age on Venus by mulitplying Earth age by 0.62
     }
     console.log("5th Conditional not reached.");//log conditional
   }
   //calculates age on Mars based on calculateAge()
   calculateAgeOnMars() {
-    if(this.year == null && this.month != null && this.day != null) {
+    if(this.year != null && this.month != null && this.day != null) {
       return this.calculateAge()/1.88;//return age on Mars by mulitplying Earth age by 1.88
     }
     console.log("6th Conditional not reached.");//log conditional
   }
   //calculates age on Jupiter based on calculateAge()
   calculateAgeOnJupiter() {
-    if(this.year == null && this.month != null && this.day != null) {
+    if(this.year != null && this.month != null && this.day != null) {
       return this.calculateAge()/11.86;//return age on Jupiter by mulitplying Earth age by 11.86
     }
     console.log("7th Conditional not reached.");//log conditional
   }
   //calculates life expectancy based on calculateAge() and an arbitrary number chosen to represent an average life-span
-  calculateLifeExpectancy() {
-    if(this.year == null && this.month != null && this.day != null) {
+  calculateEarthLifeExpectancy() {
+    if(this.year != null && this.month != null && this.day != null) {
       let lifeExpectancy = 85;//define local variable for life expectancy
       let currentAge = this.calculateAge();//locally scope current Earth age
-      if(currentAge <= lifeExpectancy) {
+      if(currentAge < lifeExpectancy) {
         return "You've yet to reach the average life expectancy."
       }
       else {
-        return "You've exceeded the average life expectancy by: x years." + parseFloat( currentAge - lifeExpectancy );//return age difference
+        return "You have exceeded the average life expectancy by: " + parseFloat( currentAge - lifeExpectancy ) + " years.";//return age difference
+      }
+    }
+    console.log("8th Conditional not reached.");//log conditional
+  }
+  calculateMercuryLifeExpectancy() {
+    if(this.year != null && this.month != null && this.day != null) {
+      let lifeExpectancy = 85;//define local variable for life expectancy
+      let currentAge = this.calculateAge();//locally scope current Earth age
+      if(currentAge < lifeExpectancy) {
+        return "You've yet to reach the average life expectancy."
+      }
+      else {
+        return "You have exceeded the average life expectancy by: " + parseFloat( currentAge - lifeExpectancy ) + " years.";//return age difference
+      }
+    }
+    console.log("8th Conditional not reached.");//log conditional
+  }
+  calculateVenusLifeExpectancy() {
+    if(this.year != null && this.month != null && this.day != null) {
+      let lifeExpectancy = 85;//define local variable for life expectancy
+      let currentAge = this.calculateAge();//locally scope current Earth age
+      if(currentAge < lifeExpectancy) {
+        return "You've yet to reach the average life expectancy."
+      }
+      else {
+        return "You have exceeded the average life expectancy by: " + parseFloat( currentAge - lifeExpectancy ) + " years.";//return age difference
+      }
+    }
+    console.log("8th Conditional not reached.");//log conditional
+  }
+  calculateMarsLifeExpectancy() {
+    if(this.year != null && this.month != null && this.day != null) {
+      let lifeExpectancy = 85;//define local variable for life expectancy
+      let currentAge = this.calculateAge();//locally scope current Earth age
+      if(currentAge < lifeExpectancy) {
+        return "You've yet to reach the average life expectancy."
+      }
+      else {
+        return "You have exceeded the average life expectancy by: " + parseFloat( currentAge - lifeExpectancy ) + " years.";//return age difference
+      }
+    }
+    console.log("8th Conditional not reached.");//log conditional
+  }
+  calculateJupiterLifeExpectancy() {
+    if(this.year != null && this.month != null && this.day != null) {
+      let lifeExpectancy = 85;//define local variable for life expectancy
+      let currentAge = this.calculateAge();//locally scope current Earth age
+      if(currentAge < lifeExpectancy) {
+        return "You've yet to reach the average life expectancy."
+      }
+      else {
+        return "You have exceeded the average life expectancy by: " + parseFloat( currentAge - lifeExpectancy ) + " years.";//return age difference
       }
     }
     console.log("8th Conditional not reached.");//log conditional
