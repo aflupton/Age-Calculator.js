@@ -1,9 +1,8 @@
-export class Age {
-  constructor(years) {
-    this.years = years;
-  }
-  //calculates age on other planets
-  calculateAge() {
-
-  }
-}
+// export function AgeCalculator(age) {
+//   constructor(years) {
+//     this.years = years;
+//   }
+//   calculateAge() {
+//
+//   }
+// }
