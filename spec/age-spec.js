@@ -17,31 +17,31 @@ describe('Age', function() {
   //   expect(reusableDate.calculateAgeDiff()).toEqual("pass");
   // });
   it('should test for age on Mercury', function() {
-    expect(reusableDate.calculateAgeOnMercury()).toEqual(27*0.24);
+    expect(reusableDate.calculateAgeOnMercury()).toEqual(27/0.24);
   });
   it('should test for age on Venus', function() {
-    expect(reusableDate.calculateAgeOnVenus()).toEqual(27*0.62);
+    expect(reusableDate.calculateAgeOnVenus()).toEqual(27/0.62);
   });
   it('should test for age on Mars', function() {
-    expect(reusableDate.calculateAgeOnMars()).toEqual(27*1.88);
+    expect(reusableDate.calculateAgeOnMars()).toEqual(27/1.88);
   });
   it('should test for age on Jupiter', function() {
-    expect(reusableDate.calculateAgeOnJupiter()).toEqual(27*11.86);
+    expect(reusableDate.calculateAgeOnJupiter()).toEqual(27/11.86);
   });
   it('should test for remaining life expectancy on Earth', function() {
     expect(reusableDate.calculateLifeExpectancy()).toEqual(58);
   });
   it('should test for remaining life expectancy on Mercury', function() {
-    expect(reusableDate.calculateLifeExpectancy()).toEqual(58/0.24);
+    expect(reusableDate.calculateLifeExpectancy()).toEqual(58*0.24);
   });
   it('should test for remaining life expectancy on Venus', function() {
-    expect(reusableDate.calculateLifeExpectancy()).toEqual(58/0.62);
+    expect(reusableDate.calculateLifeExpectancy()).toEqual(58*0.62);
   });
   it('should test for remaining life expectancy on Mars', function() {
-    expect(reusableDate.calculateLifeExpectancy()).toEqual(58/1.88);
+    expect(reusableDate.calculateLifeExpectancy()).toEqual(58*1.88);
   });
   it('should test for remaining life expectancy on Jupiter', function() {
-    expect(reusableDate.calculateLifeExpectancy()).toEqual(58/11.86);
+    expect(reusableDate.calculateLifeExpectancy()).toEqual(58*11.86);
   });
   it('should test for whether life expectancy has been exceeded', function() {
     expect(reusableDate.calculateLifeExpectancy()).toEqual();
