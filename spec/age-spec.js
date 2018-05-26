@@ -36,18 +36,16 @@ describe('Age', function() {
     expect(reusableDate.calculateEarthLifeExpectancy()).toEqual('You have exceeded the average life expectancy by: 13 years.');
   });
   it('should test for remaining life expectancy on Mercury', function() {
-    expect(reusableDate.calculateMercuryLifeExpectancy()).toEqual(58/0.24);
+    expect(reusableDate.calculateMercuryLifeExpectancy()).toEqual("You're life expectancy is: " + parseFloat(58/0.24).toFixed(1));
   });
   it('should test for remaining life expectancy on Venus', function() {
-    expect(reusableDate.calculateVenusLifeExpectancy()).toEqual(58/0.62);
+    expect(reusableDate.calculateVenusLifeExpectancy()).toEqual("You're life expectancy is: " + parseFloat(58/0.62).toFixed(1));
   });
   it('should test for remaining life expectancy on Mars', function() {
-    expect(reusableDate.calculateMarsLifeExpectancy()).toEqual(58/1.88);
+    expect(reusableDate.calculateMarsLifeExpectancy()).toEqual("You're life expectancy is: " + parseFloat(58/1.88).toFixed(1));
   });
   it('should test for remaining life expectancy on Jupiter', function() {
-    expect(reusableDate.calculateJupiterLifeExpectancy()).toEqual(58/11.86);
+    expect(reusableDate.calculateJupiterLifeExpectancy()).toEqual("You're life expectancy is: " + parseFloat(58/11.86).toFixed(1));
   });
-  it('should test for whether life expectancy has been exceeded', function() {
-    expect(reusableDate.calculateLifeExpectancy()).toEqual();
-  })
+
 });

@@ -80,10 +80,10 @@ export class Age {
       let lifeExpectancy = 85;//define local variable for life expectancy
       let currentAge = this.calculateAge();//locally scope current Earth age
       if(currentAge < lifeExpectancy) {
-        return "You've yet to reach the average life expectancy."
+        return "You're life expectancy is: " + parseFloat( ((lifeExpectancy/0.24) - (currentAge/0.24)).toFixed(1));
       }
       else {
-        return "You have exceeded the average life expectancy by: " + parseFloat( currentAge - lifeExpectancy ) + " years.";//return age difference
+        //return age difference
       }
     }
     console.log("8th Conditional not reached.");//log conditional
@@ -93,10 +93,10 @@ export class Age {
       let lifeExpectancy = 85;//define local variable for life expectancy
       let currentAge = this.calculateAge();//locally scope current Earth age
       if(currentAge < lifeExpectancy) {
-        return "You've yet to reach the average life expectancy."
+        return "You're life expectancy is: " + parseFloat( ((lifeExpectancy/0.62) - (currentAge/0.62)).toFixed(1));
       }
       else {
-        return "You have exceeded the average life expectancy by: " + parseFloat( currentAge - lifeExpectancy ) + " years.";//return age difference
+        //return age difference
       }
     }
     console.log("8th Conditional not reached.");//log conditional
@@ -106,10 +106,10 @@ export class Age {
       let lifeExpectancy = 85;//define local variable for life expectancy
       let currentAge = this.calculateAge();//locally scope current Earth age
       if(currentAge < lifeExpectancy) {
-        return "You've yet to reach the average life expectancy."
+        return "You're life expectancy is: " + parseFloat( (lifeExpectancy/1.88 - (currentAge/1.88)).toFixed(1));
       }
       else {
-        return "You have exceeded the average life expectancy by: " + parseFloat( currentAge - lifeExpectancy ) + " years.";//return age difference
+        //return age difference
       }
     }
     console.log("8th Conditional not reached.");//log conditional
@@ -119,10 +119,10 @@ export class Age {
       let lifeExpectancy = 85;//define local variable for life expectancy
       let currentAge = this.calculateAge();//locally scope current Earth age
       if(currentAge < lifeExpectancy) {
-        return "You've yet to reach the average life expectancy."
+        return "You're life expectancy is: " + parseFloat( (lifeExpectancy/11.86 - (currentAge/11.86)).toFixed(1));
       }
       else {
-        return "You have exceeded the average life expectancy by: " + parseFloat( currentAge - lifeExpectancy ) + " years.";//return age difference
+        //return age difference
       }
     }
     console.log("8th Conditional not reached.");//log conditional
